@@ -1,17 +1,19 @@
 import react from 'react'
 
-class TodoForm extends react.Component{
+class TodoForm extends react.Component {
     constructor(props){
-        super(props)
+        super(props);
         this.state = {
-            task: ''
+            task: '',
         };
+        
     }
+
 
     onInput(event){
         const text = event.target.value
         this.setState({
-            task = text
+            task : text
         } )
     }
 
